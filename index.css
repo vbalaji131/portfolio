@@ -1,0 +1,16 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* body {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  } */
+.bg-image{
+    background-color: black;
+    /* background-image: url("image/bg-image.jpg"); */
+    color: azure;
+}
+.links{
+    text-decoration:none;
+}
