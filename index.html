@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,16 +38,15 @@
     ></script>
     <title>Portfolio</title>
   </head>
-  <body style="font-family: 'Open Sans', sans-serif;">
-    <nav
-      class="navbar navbar-expand-md navbar-dark navbar-fixed-top sticky-top py-1 bg-dark"
-    >
+  <body style="font-family: 'Open Sans', sans-serif">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-1 bg-dark">
       <div class="container row-xs d-flex flex-row">
-        <a class="navbar-brand col-9 col-md-6 text-wrap" href="#"
-          >BALAJIRAM - SOFTWARE ENGINEER</a
+        <a class="navbar-brand col me-auto text-sm-nowrap" href="#"
+          >BALAJIRAM - PORTFOLIO</a
         >
         <button
-          class="navbar-toggler col-2 col-sm px-0"
+          class="navbar-toggler px-0 col-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -61,7 +62,10 @@
         >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a
+                class="nav-link active"
+                href="#workexperience"
+                aria-current="page"
                 >WORK EXPERIENCE</a
               >
             </li>
@@ -73,10 +77,16 @@
                 >RESUME</a
               >
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#workexperience"> RESUME </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- about container -->
     <div class="bg-image">
       <div
         class="container vh-100 d-flex flex-column justify-content-center align-items-center"
@@ -116,25 +126,83 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <h1 class="text-center" style="text-decoration: underline;">WORK EXPERIENCE</h1>
-      <h1>Software QA Engineer
-        Amazon development centre
+
+
+    
+    <!-- work experience constainer -->
+    <div class="work-experience bg-info">
+      <div class="container pt-5" id="workexperience">
+        <h1
+          class="text-center"
+          style="text-decoration: underline; color: azure"
+        >
+          WORK EXPERIENCE
         </h1>
-        <article>
-            <header>
-                <h1 class="headline" >Headline</h1>
-                <div class="byline">
-                    <address class="author">By <a rel="author" href="/author/john-doe">John Doe</a></address> 
-                    on <time pubdate datetime="2011-08-28" title="August 28th, 2011">8/28/11</time>
-                </div>
-            </header>
-        
-            <div class="article-content">
-            ...
+
+        <div class="card-group flex-md-row justify-content-between  flex-column">
+            <div class="card border-dark m-3 m-lg-5">
+              <img src="image/amazon-logo.jpg" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h4 class="card-title">Software Quality Assurance</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-        </article>
+            <div class="card border-dark m-3 m-lg-5">
+              <img src="image/front-end-logo.jpg" class="card-img-top " alt="...">
+              <div class="card-body text-center"> 
+                <h4 class="card-title">Front-end Web development</h4>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            
+          </div>
+      </div>
     </div>
+
+    <!-- my profile -->
+    
+
+<!-- contact -->
+
+<div class="contact row d-flex justify-content-center">
+    <div class="col-sm-4 my-5">
+        <div class="my-profile d-flex justify-content-center">
+            <img src="image/profile-img.jpg" alt="profile-pic" class="my-pic">
+          </div>
+        <div class="text-center">
+          <h5 class="p-2">Living, learning, & leveling up one day at a time.</h5>
+         <div class="d-flex justify-content-center">
+          <div class="icon" ><i class="fas fa-xl fa-envelope"></i></div>
+          <div class="icon"><i class="fa  fa-xl  fa-brands fa-linkedin"></i></div>
+          <div class="icon"><i class="fa-brands  fa-xl  fa-github-square"></i></div></div>
+          <!-- <p class=""><small class="text-muted"> -->
+            
+          </small></p>
+        </div>
+      </div>
+</div>
+
+
   </body>
-  <script type="text/javascript"></script>
+  <script>
+    $("#navbarSupportedContent a:not(.dropdown-toggle)").click(function () {
+      $("#navbarSupportedContent").collapse("hide");
+    });
+  </script>
 </html>

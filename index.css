@@ -14,3 +14,29 @@ body {
 .links{
     text-decoration:none;
 }
+.pt-6 {
+    padding-top: 5rem !important;
+  }
+
+.card-img-top{
+    max-height: 200px;
+    /* max-width: 400px; */
+}
+
+/*Profile Card 3*/
+
+  .my-pic {
+    max-width: 110px;
+    border-radius: 50%;
+    border: 4px solid rgb(133, 122, 122);
+  }
+
+.contact .icon{
+    width: 40px;
+    height: 40px;
+    padding-top: 4px;
+    /* padding-left: -20px; */
+    border-radius: 50%;
+    border: 4px solid rgb(133, 122, 122);
+    margin: 10px;
+}
